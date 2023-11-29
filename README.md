@@ -23,20 +23,51 @@ Our data is based off a Kaggle available data set, the Cleveland Clinic Heart Di
 
 ## Column Descriptions
 
-Age - age in years
-Sex - (1 = male; 0 = female)
-CP - chest pain type
-Trestbps - resting blood pressure (in mm Hg on admission to the hospital)
-Chol - serum cholestoral in mg/dl
-FBS - (fasting blood sugar &gt; 120 mg/dl) (1 = true; 0 = false)
-Restecg - resting electrocardiographic results
-Thalach - maximum heart rate achieved
-Exang - exercise induced angina (1 = yes; 0 = no)
-Oldpeak - ST depression induced by exercise relative to rest
-Slope - the slope of the peak exercise ST segment
-Ca - number of major vessels (0-3) colored by flourosopy
-Thal - 1 = normal; 2 = fixed defect; 3 = reversable defect
-Num - artery diameter (0-4)
+ - Age - age in years
+ - Sex - (1 = male; 0 = female)
+ - CP - chest pain type
+ - Trestbps - resting blood pressure (in mm Hg on admission to the hospital)
+ - Chol - serum cholestoral in mg/dl
+ - FBS - (fasting blood sugar &gt; 120 mg/dl) (1 = true; 0 = false)
+ - Restecg - resting electrocardiographic results
+ - Thalach - maximum heart rate achieved
+ - Exang - exercise induced angina (1 = yes; 0 = no)
+ - Oldpeak - ST depression induced by exercise relative to rest
+ - Slope - the slope of the peak exercise ST segment
+ - Ca - number of major vessels (0-3) colored by flourosopy
+ - Thal - 1 = normal; 2 = fixed defect; 3 = reversable defect
+ - Num - artery diameter (0-4)
+
+## Visual Description
+
+**Question:** Which categories show the highest correlation with the classification
+**Question:** Visualize each category via a box plot
+
+<img width="552" alt="image" src="https://github.com/UIUC-DSC/CWMDSJ/assets/132399910/54781d1a-8526-4f9d-9b7f-f2d02127028f">
+ - num on the y axis is the target variable, showing severity of heart disease (0 being none, 4 being fatal)
+
+The plots above show clear correlations. Other plots didn't. We removed a few that showed little correlation if any. Due to these changes made, the accuracy of our model jumped up by around 10%. 
+
+Another tool we used was the correlation matrix/heat map.
+
+<img width="644" alt="image" src="https://github.com/UIUC-DSC/CWMDSJ/assets/132399910/e1fa3155-6821-46ee-b486-7ad52ff8069d">
+
+## Model Analysis
+
+**Purpose:**
+We are aiming to predict the occurrence of heart disease using various health parameters. We have employed a Multilayer Perceptron (MLP) Classifier, a type of neural network, to create a predictive model. The model is trained on a subset of the data and then tested on an unseen dataset to evaluate its performance. The accuracy of the model is calculated as a measure of its predictive power. Additionally, a correlation matrix is generated to understand the relationships between different features and the target variable. The ultimate goal of this model is to aid in the early detection and prevention of heart disease, thereby potentially improving patient outcomes and saving lives.
+
+**Model Specifics:**
+The machine learning model we're using is a Multi-Layer Perceptron (MLP), which is a type of artificial neural. The MLP we use has two hidden layers, with 32 neurons in the first layer and 16 neurons in the second layer. The activation function for the neurons is ReLU (Rectified Linear Unit), and the optimizer used for training the network is Adam. The model determines the weights of each layer based on previous iterations of epoch training. 
+
+
+
+
+
+
+
+
+
 
 
 # not 100% accurate, mention this
