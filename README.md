@@ -41,9 +41,10 @@ Our data is based off a Kaggle available data set, the Cleveland Clinic Heart Di
 ## Visual Description
 
 **Question:** Which categories show the highest correlation with the classification
-**Question:** Visualize each category via a box plot
+**Response:** Visualize each category via a box plot
 
 <img width="552" alt="image" src="https://github.com/UIUC-DSC/CWMDSJ/assets/132399910/54781d1a-8526-4f9d-9b7f-f2d02127028f">
+
  - num on the y axis is the target variable, showing severity of heart disease (0 being none, 4 being fatal)
 
 The plots above show clear correlations. Other plots didn't. We removed a few that showed little correlation if any. Due to these changes made, the accuracy of our model jumped up by around 10%. 
