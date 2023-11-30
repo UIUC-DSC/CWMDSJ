@@ -70,5 +70,5 @@ To improve the model's performance in the future, we could consider the followin
 4. Ensemble Methods: You could combine the predictions of several models to improve the accuracy of the final
 
 
-**Results:**
+## Results
 We were able to implement a model that achieved a 95% accuracy rate in heart disease prediction. 
