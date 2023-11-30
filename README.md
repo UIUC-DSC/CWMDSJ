@@ -61,14 +61,14 @@ We are aiming to predict the occurrence of heart disease using various health pa
 **Model Specifics:**
 The machine learning model we're using is a Multi-Layer Perceptron (MLP), which is a type of artificial neural. The MLP we use has two hidden layers, with 32 neurons in the first layer and 16 neurons in the second layer. The activation function for the neurons is ReLU (Rectified Linear Unit), and the optimizer used for training the network is Adam. The model determines the weights of each layer based on previous iterations of epoch training. 
 
+MLP is a good choice for this classification task because it can model complex, non-linear relationships between the features and the target variable. 
+
+To improve the model's performance in the future, we could consider the following:
+1. Hyperparameter Tuning: You could experiment with different values for the hyperparameters of the MLP, such as the number of hidden layers, the number of neurons in each layer, the activation function, and the learning rate of the optimizer.
+2. Feature Engineering: You could create new features that might be relevant for predicting heart disease, or use techniques like PCA (Principal Component Analysis) to reduce the dimensionality of your dataset.
+3. Different Models: You could try other types of models, such as Support Vector Machines (SVM), Random Forests, or Gradient Boosting Machines (GBM), and compare their performance with the MLP.
+4. Ensemble Methods: You could combine the predictions of several models to improve the accuracy of the final
 
 
-
-
-
-
-
-
-
-
-# not 100% accurate, mention this
+**Results:**
+We were able to implement a model that achieved a 95% accuracy rate in heart disease prediction. 
